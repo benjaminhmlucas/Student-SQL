@@ -1,0 +1,56 @@
+1)
+Select *
+From Customers
+2)
+SELECT *
+From Products
+Order By UnitPrice, ProductName;
+3)
+Select ProductID, ProductName, UnitPrice, UnitsInStock, UnitsOnOrder
+From Products
+Where Discontinued = 1;
+4)
+Select customerID, CompanyName, Substring(CompanyName,1,8)
+From Customers
+5)
+Select Top 10 Freight, CustomerID
+From Orders
+Order By Freight DESC
+6)
+Select CustomerID, CompanyName
+From Customers
+Where CompanyName Like '%Market%'
+7)
+Select LastName, FirstName, lower(left(FirstName,1)) + '.' + lower(LastName) + '@northwind.com' As EmployeeEmail
+From Employees
+8)
+Select CompanyName, Country
+From Customers
+Where Country IN ('France', 'Germany', 'UK', 'USA');
+9)
+Select Top 5 Percent Freight
+From Orders
+Order By Freight DESC
+10)
+Select LastName, HomePhone, Notes
+From Employees
+Where Notes like '%German%'
+11)
+Select OrderID, OrderDate
+From Orders
+Where OrderDate between '2014-07-01' And '2014-07-31'
+12)
+Select OrderID, OrderDate
+From Orders
+Where OrderDate like '2014-07-__'
+13)
+Select OrderID, ShippedDate
+From Orders
+Where ShippedDate Is Null;
+14)
+Select Distinct CustomerID
+From Orders
+15)
+Select Distinct CustomerID, City, Region, PostalCode
+From Customers
+Order By City, CustomerID
