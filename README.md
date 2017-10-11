@@ -1,2 +1,2 @@
 # Student-SQL
-Code written in my SQL class
+Each file is a series of SQL commands passed into a database made for the class
